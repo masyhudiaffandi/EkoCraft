@@ -6,7 +6,7 @@
 
     .about {
         padding-inline: 8vw;
-        padding-block: 6vw;
+        padding-block: 6vh;
     }
 
     .about-wrapper {
@@ -56,12 +56,14 @@
         background-color: white;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         scroll-snap-align: center;
+        border-radius: 2vw
     }
   
     .store-item img {
         width: 100%;
         height: auto;
         object-fit: cover;
+        border-radius: 2vw 2vw 0vw 0vw
     }
   
       .store-item-footer {
