@@ -73,8 +73,10 @@ header,main {
 
     .hero-text {
         color: white;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: normal;
+        width: 100%;
+
     }
 
     .explore-button {
