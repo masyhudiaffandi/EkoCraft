@@ -35,7 +35,7 @@ header,main {
         background-attachment: fixed;
     }
 
-    nav {
+    .nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -47,9 +47,12 @@ header,main {
         padding-inline: 8vw;
         padding-block: 6vw;
     }
-    
-    nav scrolled {
-        background-color: white;
+    .nav-scrolled {
+        background: rgba(255, 255, 255, 0.42);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.8px);
+        -webkit-backdrop-filter: blur(8.8px);
+        transition: background 0.5s ease;
     }
 
     .hero {
