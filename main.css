@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about {
+        padding-inline: 8vw;
+        padding-block: 6vw;
+    }
+
+    .about-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2.8vh;
+    }
+
+    .about-title {
+        font-size: 3vw;
+    }
+
+    .about-desc {
+        font-size: 2.8vw;
+    }
+
+    /* store */
+    .store {
+        background-color: green;
+        padding-inline: 8vw;
+        padding-block: 6vw;
+    }
+
+    .store-title {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+    }
+
+    .store-card {
+        display: flex;
+        flex-direction: column;
+        width: 8vw;
+    }
+
+    .store-item-wrapper {
+        display: flex;
+        overflow-x: scroll;
+        padding: 10px;
+    }
+  
+    .store-item {
+        flex: 0 0 auto;
+        width: 300px;
+        margin-right: 10px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        scroll-snap-align: center;
+    }
+  
+    .store-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+  
+      .store-item-footer {
+        padding: 10px;
+        text-align: center;
+    }
+}
