@@ -4,7 +4,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header,main {
+    display: none;
+}
+
+.desktop-alert {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
+    header,main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop-alert {
+        display: none;
+    }
+
     header {
         background-image: url(images/bg-hero.png);
         height: 100vh;
@@ -26,6 +46,10 @@
         color: white;
         padding-inline: 8vw;
         padding-block: 6vw;
+    }
+    
+    nav scrolled {
+        background-color: white;
     }
 
     .hero {
