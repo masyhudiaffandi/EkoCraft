@@ -45,6 +45,10 @@
         padding-inline: 8vw;
         gap: 4vw;
     }
+
+    .store-item-wrapper::-webkit-scrollbar {
+        display: none;
+    }
   
     .store-item {
         flex: 0 0 auto;
@@ -89,7 +93,6 @@
     }
 
     .artist {
-        height: 50vh;
         padding-block: 3vh;
     }
 
@@ -104,6 +107,10 @@
         padding-inline: 8vw;
         overflow-x: scroll;
         gap: 4vw;
+    }
+
+    .artist-wrapper::-webkit-scrollbar {
+        display: none;
     }
 
     .artist-item {
@@ -129,5 +136,83 @@
     .avatar {
         width: 20vw;
         border-radius: 100%;
+    }
+
+    .forum-title {
+        font-size: 3vw;
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+
+    .forum {
+        padding-block: 2vh;
+        height: 46vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .forum-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forum-item {
+        display: flex;
+        gap: 2vw;
+    }
+
+    .forum-s {
+        width: 1/2;
+        background-color: aliceblue;
+        font-size: 1.6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7vw 4vw;
+        border-radius: 2vw;
+        gap: 4vw;
+    }
+
+    .forum-s-icon i {
+        font-size: 8vw;
+    }
+
+    .forum-c {
+        width: 1/2;
+        background-color: aliceblue;
+        font-size: 1.6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw;
+        border-radius: 2vw;
+        gap: 4vw;
+        border-radius: 4vw;
+        padding: 7vw 4vw;
+    }
+
+    .forum-c-icon i {
+        font-size: 8vw;
+    }
+
+    .public-forum {
+        background-color: aliceblue;
+        font-size: 1.6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw;
+        border-radius: 2vw;
+        gap: 4vw;
+        border-radius: 4vw;
+        padding: 7vw 4vw;
+        width: 55vw;
+    }
+
+    .public-forum-icon i {
+        font-size: 8vw;
     }
 }
