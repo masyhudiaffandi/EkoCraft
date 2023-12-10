@@ -40,7 +40,7 @@
     .store-card {
         display: flex;
         flex-direction: column;
-        width: 8vw;
+        width: 3vw;
     }
 
     .store-item-wrapper {
@@ -51,7 +51,7 @@
   
     .store-item {
         flex: 0 0 auto;
-        width: 300px;
+        width: 36vw;
         margin-right: 10px;
         background-color: white;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -67,22 +67,28 @@
     }
   
     .store-item-footer {
-        padding: 4vw   
+        padding: 2vw   
+    }
+
+    .store-item-footer h2,p {
+        font-size: 3vw
     }
 
     .buy {
-        padding: 4vw;
+        padding: 2vw;
     }
 
     .buy button {
         width: 100%;
         background-color: rgb(66, 174, 66);
         border: none;
-        padding: 2vw;
+        padding: 1vw;
+        border-radius: 1vw;
     }
 
     .buy button a {
         color: white;
         text-decoration: none;
+        font-size: 2.5vw;
     };
 }
