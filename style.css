@@ -27,7 +27,7 @@ header,main {
 
     header {
         background-image: url(images/bg-hero.png);
-        height: 100vh;
+        height: 100dvh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -40,9 +40,9 @@ header,main {
         align-items: center;
         justify-content: space-between;
         position: fixed;
+        top: 0;
         left: 0;
         right: 0;
-        top: 0;
         color: white;
         padding-inline: 8vw;
         padding-block: 6vw;
@@ -52,8 +52,67 @@ header,main {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(8.8px);
         -webkit-backdrop-filter: blur(8.8px);
-        transition: background 0.5s ease;
+        transition: background 0.5s ease-in-out;
+        transition: padding-block 0.5s ease-in-out;
+        padding-block: 2vh;
     }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar input {
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 5px;
+        background: white; /* Warna latar search bar */
+    }
+
+    .search-bar button {
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        background: #9BEA51; /* Warna tombol    search */
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .bottom-nav {
+        background-color: #ffffff;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 30px 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .bottom-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 8vw;
+    }
+
+    .b-navigation {
+        display: flex;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        gap: 0.5vh;
+        padding-block: 3vw;
+    }
+
+    .b-navigation a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 3vw;
+    }
+
 
     .hero {
         display: flex;
@@ -62,21 +121,24 @@ header,main {
         text-align: center;
         justify-content: center;
         height: 100%;
-        padding-inline: 8vw;
     }
 
     .hero-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+        line-height: 6vh;
     }
 
     .hero-text {
         color: white;
-        font-size: 4vw;
+        font-size: 3vw;
         font-weight: normal;
         width: 100%;
+    }
 
+    .hero-text span{
+        color: #9BEA51;
     }
 
     .explore-button {
@@ -85,10 +147,11 @@ header,main {
 
     .explore-button button{
         margin: 2vw;
-        background-color: green;
+        background-color: #709C47;
         border: none;
-        padding: 2.8vw;
+        padding: 3.5vw 5.3vw;
         border-radius: 1.3vw;
+        align-items: center;
     }
 
     .explore-button button a{
