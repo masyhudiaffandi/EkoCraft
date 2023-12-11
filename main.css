@@ -138,81 +138,58 @@
         border-radius: 100%;
     }
 
+/* Gaya CSS dapat ditambahkan di sini */
+    .forum {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 48vh;
+    }
+
     .forum-title {
         font-size: 3vw;
-        text-align: center;
-        padding-bottom: 2vh;
     }
 
-    .forum {
-        padding-block: 2vh;
-        height: 46vh;
-        align-items: center;
+    .forum-nav ul {
+        list-style: none;
         display: flex;
-        flex-direction: column;
-        gap: 2vw;
-    }
-
-    .forum-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .forum-item {
-        display: flex;
-        gap: 2vw;
-    }
-
-    .forum-s {
-        width: 1/2;
-        background-color: aliceblue;
-        font-size: 1.6vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 7vw 4vw;
-        border-radius: 2vw;
+        margin-bottom: 20px;
+        border-bottom: thick;
         gap: 4vw;
     }
 
-    .forum-s-icon i {
-        font-size: 8vw;
+
+    .forum-nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 3.5vw;
+        transition: color 0.3s ease;
     }
 
-    .forum-c {
-        width: 1/2;
-        background-color: aliceblue;
-        font-size: 1.6vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5vw;
-        border-radius: 2vw;
-        gap: 4vw;
-        border-radius: 4vw;
-        padding: 7vw 4vw;
+    .forum-nav a:hover {
+        color: #3498db;
     }
 
-    .forum-c-icon i {
-        font-size: 8vw;
+    .forum-nav a:active {
+        color: green;
     }
 
-    .public-forum {
-        background-color: aliceblue;
-        font-size: 1.6vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5vw;
-        border-radius: 2vw;
-        gap: 4vw;
-        border-radius: 4vw;
-        padding: 7vw 4vw;
-        width: 55vw;
+    .forum-container {
+        display: none;
+        width: 100%;
+        max-width: 800px;
     }
 
-    .public-forum-icon i {
-        font-size: 8vw;
+    .forum-container.active {
+        display: block;
+        margin-top: 20px;
     }
+
+    /* Content Styles */
+    .forum-container p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
 }

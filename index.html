@@ -174,43 +174,38 @@
                 </div>
             </div>
             
-            <div class="forum">
+            <div class="forum" id="forum">
                 <div class="forum-title">
                     <h1>Forum</h1>
                 </div>
-                <div class="forum-wrapper">
-                    <div class="forum-item">
-                        <div class="forum-s">
-                            <div class="forum-s-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="forum-s-n">
-                                <h1>Seller Forum</h1>
-                            </div>
-                        </div>
-                        <div class="forum-c">
-                            <div class="forum-c-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="forum-c-n">
-                                <h1>Customer Forum</h1>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="forum-nav" id="forumNav">
+                    <ul>
+                        <li><a href="javascript:void(0);" onclick="loadForum('sellerForum')">Seller Forum</a></li>
+                        <li><a href="javascript:void(0);" onclick="loadForum('customerForum')">Customer Forum</a></li>
+                        <li><a href="javascript:void(0);" onclick="loadForum('publicForum')">Public Forum</a></li>
+                    </ul>
                 </div>
-                <div class="public-forum">
-                    <div class="public-forum-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="public-forum-n">
-                        <h1>Public Forum</h1>
-                    </div>
+    
+                <!-- Isi forum -->
+                <div class="forum-container" id="sellerForum">
+                    <!-- Konten Seller Forum di sini -->
+                    <p>Ini adalah konten dari Seller Forum</p>
+                </div>
+                <div class="forum-container" id="customerForum">
+                    <!-- Konten Customer Forum di sini -->
+                    <p>Ini adalah konten dari Customer Forum</p>
+                </div>
+                <div class="forum-container" id="publicForum">
+                    <!-- Konten Public Forum di sini -->
+                    <p>Ini adalah konten dari Public Forum</p>
                 </div>
             </div>
         </main>
 
         <script src="script.js"></script>
         <script src="slider.js"></script>
+        <script src="forum.js"></script>
         <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     </body>
     </html>
