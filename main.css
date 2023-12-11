@@ -21,12 +21,12 @@
     }
 
     .about-desc {
-        font-size: 2.8vw;
+        font-size: 3.8vw;
     }
 
     /* store */
     .store {
-        background-color: #9BEA51;
+        background-color: #709C47;
         padding-block: 3vh;
     }
 
@@ -37,14 +37,19 @@
         justify-content: space-between;
         align-items: center;
         padding-inline: 8vw;
+        margin-bottom: 2vh;
     }
 
-
+    .store-title a {
+        color: white;
+        font-size: 4vw;
+        text-decoration: underline;
+    }
 
     .store-item-wrapper {
         display: flex;
         overflow-x: scroll;
-        padding-top: 3vh;
+        overflow-y: hidden;
         padding-inline: 8vw;
         gap: 4vw;
     }
@@ -57,8 +62,10 @@
 
     .card {
         position: relative;
-        width: 11.875em;
-        height: 16.5em;
+        /* width: 11.875em; */
+        width: 42vw;
+        /* height: 16.5em; */
+        height: 32vh;
         box-shadow: 0px 1px 13px rgba   (0,0,0,0.1);
         cursor: pointer;
         transition: all 120ms;
@@ -70,28 +77,53 @@
         background: #fff;
         padding: 0.5em;
         padding-bottom: 3.4em;
+        border-radius: 0.725em;
+    }
+
+    .best-sale {
+        color: white;
+        align-items: center;
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        /* width: 11.875em; */
+        width: 42vw;
+        /* height: 16.5em; */
+        height: 32vh;
+        box-shadow: 0px 1px 13px rgba   (0,0,0,0.1);
+        transition: all 120ms;
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.725em;
     }
 
     .card::after {
-      content: "Add to Cart";
-      padding-top: 1.25em;
-      padding-left: 1.25em;
+      content: "Added to Cart";
+      display: flex;
+      align-items: center;
+      text-align: center;
       position: absolute;
+      padding-left: 4.8vw;
+      width: 100%;
       left: 0;
-      bottom: -60px;
-      background: #00AC7C;
+      bottom: 2;
+      background: #00ff2f;
       color: #fff;
-      height: 2.5em;
+      height: 6vh;
       width: 90%;
       transition: all 80ms;
       font-weight: 600;
-      text-transform: uppercase;
       opacity: 0;
+      border-radius: 0 0 0.725em 0.725em;
     }
 
     .card .title {
       font-family: Arial, Helvetica,    sans-serif;
-      font-size: 0.9em;
+      font-size: 3.8vw;
       position: absolute;
       left: 0.625em;
       bottom: 1.875em;
@@ -101,7 +133,7 @@
 
     .card .price {
       font-family: Impact,  Haettenschweiler, 'Arial Narrow  Bold', sans-serif;
-      font-size: 0.9em;
+      font-size: 3.8vw;
       position: absolute;
       left: 0.625em;
       bottom: 0.625em;
@@ -128,6 +160,7 @@
         object-fit: cover;
         object-position: center;
         border-radius: 0.625em;
+        user-select: none;
     }
 
     .text {
@@ -167,7 +200,7 @@
     .artist-title {
         font-size: 3vw;
         text-align: center;
-        padding-bottom: 2vh;
+        padding-bottom: 3vh;
     }
 
     .artist-wrapper {
@@ -179,6 +212,10 @@
 
     .artist-wrapper::-webkit-scrollbar {
         display: none;
+    }
+
+    .artist-name {
+        font-size: 4vw;
     }
 
     .artist-item {
@@ -206,41 +243,59 @@
         border-radius: 100%;
     }
 
-/* Gaya CSS dapat ditambahkan di sini */
     .forum {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 48vh;
+        padding: 20px;
+        height: 56vh;
     }
 
     .forum-title {
-        font-size: 3vw;
-    }
-
-    .forum-nav ul {
-        list-style: none;
-        display: flex;
         margin-bottom: 20px;
-        border-bottom: thick;
-        gap: 4vw;
     }
 
-
-    .forum-nav a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 3.5vw;
-        transition: color 0.3s ease;
+    .forum-nav-wrapper {
+        display: flex;
     }
 
-    .forum-nav a:hover {
-        color: #3498db;
+    .radio-inputs {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 0.5rem;
+      background-color: #EEE;
+      box-sizing: border-box;
+      box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+      padding: 0.25rem;
+      width: 300px;
+      font-size: 14px;
     }
 
-    .forum-nav a:active {
-        color: green;
+    .radio-inputs .radio {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+
+    .radio-inputs .radio input {
+      display: none;
+    }
+
+    .radio-inputs .radio .name {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      border: none;
+      padding: .5rem 0;
+      color: rgba(51, 65, 85, 1);
+      transition: all .15s ease-in-out;
+    }
+
+    .radio-inputs .radio input:checked + .name {
+      background-color: #fff;
+      font-weight: 600;
     }
 
     .forum-container {
@@ -258,6 +313,22 @@
     .forum-container p {
         font-size: 16px;
         line-height: 1.5;
+    }
+
+    .news-card {
+        display: flex;
+        width: 92vw;
+    }
+
+    .news-iamge {
+        width: 100%;
+    }
+
+    .news-iamge img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
 }

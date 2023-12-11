@@ -46,7 +46,13 @@ header,main {
         right: 0;
         color: white;
         padding-inline: 8vw;
-        padding-block: 6vw;
+        padding-block: 3vh;
+    }
+
+    .title img {
+        width: 12vw;
+        display: flex;
+        align-items: center;
     }
     .nav-scrolled {
         background: rgba(0, 0, 0, 0.2);
@@ -69,14 +75,14 @@ header,main {
         border-radius: 2vw 0% 0% 2vw;
         margin-right: 1vw;
         background: white;
-        width: 28vw; /* Warna latar search bar */
+        width: 48vw; /* Warna latar search bar */
     }
 
     .search-bar button {
         padding: 2vw;
         border: none;
-        border-radius: 1vw;
-        background: #9BEA51; /* Warna tombol    search */
+        border-radius: 0 2vw 2vw 0vw;
+        background: #709C47; /* Warna tombol    search */
         color: #fff;
         cursor: pointer;
     }
@@ -141,7 +147,7 @@ header,main {
     }
 
     .hero-text span{
-        color: #9BEA51;
+        color: #98c370;
     }
 
     .explore-button {
@@ -160,6 +166,7 @@ header,main {
     .explore-button button a{
         text-decoration: none;
         color: white;
+        font-size: 3vw;
     }
 
 }

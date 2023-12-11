@@ -21,7 +21,7 @@
         <header>
             <nav>
                 <div class="nav">
-                    <div class="title"><h1>EkoCraft</h1></div>
+                    <div class="title"><img src="images/logo.png" alt=""></div>
                     <div class="search-bar">
                         <input type="text" placeholder="Search...">
                         <button type="submit"><i class="fas fa-search"></i></button>
@@ -66,14 +66,14 @@
                         </h1>
                     </div>
                     <div class="explore-button">
-                        <button><a href="#">Explore Now</a></button>
+                        <button><a href="#about">Explore Now</a></button>
                     </div>
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="about">
+            <div class="about" id="about">
                 <div class="about-wrapper">
                     <div class="about-title">
                         <h1>About Us</h1>
@@ -88,28 +88,36 @@
             <div class="store">
                 <div class="store-wrapper">
                     <div class="store-title">
-                        <h1>Our Store</h1>
-                        <p>See All</p>
+                        <h1>Eko Store</h1>
+                        <a>See All</a>
                     </div>
 
                     <div class="store-items">
                         <div class="store-item-wrapper">
+                            <div class="best-sale">
+                                <h1>Best <br> Seller</h1>
+                                <p>12.12</p>
+                            </div>
                             <div class="card">
                                 <div class="image">
                                     <img src="images/profile.jpg" alt="">
                                 </div>
-                                  <span class="title">Cool Chair</span>
-                                  <span class="price">$100</span>
+                                  <span class="title">Papan Menu</span>
+                                  <span class="price">Rp. 18.000</span>
                             </div>
                             <div class="card">
-                                <div class="image"><span class="text">This is a chair.</span></div>
-                                  <span class="title">Cool Chair</span>
-                                  <span class="price">$100</span>
+                                <div class="image">
+                                    <img src="images/profile.jpg" alt="">
+                                </div>
+                                  <span class="title">Gerobak Kayu</span>
+                                  <span class="price">Rp. 1.290.000</span>
                             </div>
                             <div class="card">
-                                <div class="image"><span class="text">This is a chair.</span></div>
-                                  <span class="title">Cool Chair</span>
-                                  <span class="price">$100</span>
+                                <div class="image">
+                                    <img src="images/profile.jpg" alt="">
+                                </div>
+                                  <span class="title">Yoyo Jogja</span>
+                                  <span class="price">Rp. 12.000</span>
                             </div>
                          </div>
                     </div>
@@ -158,21 +166,42 @@
             
             <div class="forum" id="forum">
                 <div class="forum-title">
-                    <h1>Forum</h1>
+                    <h1>News</h1>
                 </div>
 
-                <div class="forum-nav" id="forumNav">
-                    <ul>
-                        <li><a href="javascript:void(0);" onclick="loadForum('sellerForum')">Seller Forum</a></li>
-                        <li><a href="javascript:void(0);" onclick="loadForum('customerForum')">Customer Forum</a></li>
-                        <li><a href="javascript:void(0);" onclick="loadForum('publicForum')">Public Forum</a></li>
-                    </ul>
+                <div class="radio-inputs forum-nav" id="forumNav">
+                    <div class="radio">
+                        <input type="radio" id="sellerRadio" name="forumRadio" onclick="loadForum('sellerForum')" checked>
+                        <label for="sellerRadio" class="name">Seller</label>
+                    </div>
+    
+                    <div class="radio">
+                        <input type="radio" id="customerRadio" name="forumRadio" onclick="loadForum('customerForum')">
+                        <label for="customerRadio" class="name">Customer</label>
+                    </div>
+    
+                    <div class="radio">
+                        <input type="radio" id="publicRadio" name="forumRadio" onclick="loadForum('publicForum')">
+                        <label for="publicRadio" class="name">Public</label>
+                    </div>
                 </div>
     
                 <!-- Isi forum -->
                 <div class="forum-container" id="sellerForum">
-                    <!-- Konten Seller Forum di sini -->
-                    <p>Ini adalah konten dari Seller Forum</p>
+                    <div class="form-container-wrapper">
+                        <div class="form-content">
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="" alt="News Image">
+                                </div>
+                                <div class="news-content">
+                                    <h2 class="news-title">Judul Berita</h2>
+                                    <p class="news-summary">Isi singkat berita akan ditampilkan di sini. Anda dapat menambahkan beberapa kalimat untuk memberikan gambaran umum tentang berita.</p>
+                                    <p class="news-date">Tanggal Berita: 10 Desember 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="forum-container" id="customerForum">
                     <!-- Konten Customer Forum di sini -->
