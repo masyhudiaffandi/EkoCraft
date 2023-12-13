@@ -27,9 +27,8 @@ header,main {
 
     header {
         background-image: url(images/bg-hero.png);
-        height: 100vh;
+        height: 30vh;
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
         position: relative;
         background-attachment: fixed;
@@ -72,7 +71,7 @@ header,main {
     .search-bar input {
         padding: 2vw;
         border: none;
-        border-radius: 2vw 0% 0% 2vw;
+        border-radius: 1vw 0% 0% 1vw;
         margin-right: 1vw;
         background: white;
         width: 48vw; /* Warna latar search bar */
@@ -81,7 +80,7 @@ header,main {
     .search-bar button {
         padding: 2vw;
         border: none;
-        border-radius: 0 2vw 2vw 0vw;
+        border-radius: 0 1vw 1vw 0vw;
         background: #709C47; /* Warna tombol    search */
         color: #fff;
         cursor: pointer;
@@ -126,7 +125,6 @@ header,main {
     .hero {
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
         justify-content: center;
         height: 100%;
@@ -135,14 +133,14 @@ header,main {
     .hero-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
         line-height: 6vh;
     }
 
     .hero-text {
         color: white;
-        font-size: 3vw;
+        font-size:3vw;
         font-weight: normal;
+        margin-top: 7vh;
         width: 100%;
     }
 

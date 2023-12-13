@@ -77,7 +77,7 @@
         background: #fff;
         padding: 0.5em;
         padding-bottom: 3.4em;
-        border-radius: 0.725em;
+        border-radius: 1vw;
     }
 
     .best-sale {
@@ -159,7 +159,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        border-radius: 0.625em;
+        border-radius: 1vw;
         user-select: none;
     }
 
@@ -255,6 +255,10 @@
         margin-bottom: 20px;
     }
 
+    .forum-title h1 {
+        font-size: 5vw;
+    }
+
     .forum-nav-wrapper {
         display: flex;
     }
@@ -330,5 +334,155 @@
         object-fit: cover;
         object-position: center;
     }
+
+    .feature {
+        font-family: 'Poppins';
+    }
+
+    .feature-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+        background-color: #fff;
+        padding: 4vw;
+        padding-inline: 9vw;
+        border-radius: 2vw;
+        margin-top: -6vw;
+        z-index: 997;
+        box-shadow: #00000038 0 0 10px;
+    }
+
+    .top-feature,
+    .bottom-feature {
+        display: flex;
+        gap: 12vw;
+    }
+
+    .feature,
+    .feature-b {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7vh;
+    }
+
+    .feature a,
+    .feature-b a {
+        text-decoration: none;
+        font-size: 3vw;
+        color: #000;
+    }
+
+    .feature img,
+    .feature-b img {
+        width: 16vw;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .stores {
+        padding-block: 3vh;
+    }
+
+    .stores-items {
+        display: flex;
+        flex-wrap: wrap;
+        padding-inline: 6vw;
+        justify-content: space-between;
+    }
+
+    .stores-item {
+        display: flex;
+        flex-direction: column;
+        box-shadow: #00000038 0 0 10px;
+        width: 38vw;
+        margin-top: 3vh;
+    }
+
+    .stores-title {
+        font-family: 'Poppins';
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 8vw;
+    }
+
+    .stores-title h1 {
+        font-size: 6vw;
+    }
+
+    .stores-title a {
+        text-decoration: underline;
+        font-size: 3vw;
+    }
+
+    .stores-item {
+        padding: 2vw;
+        border-radius: 1vw;
+    }
+
+    .stores-item a {
+        text-decoration: none;
+        color: #000;
+        margin-top: 2vh;
+    }
+
+    .stores-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1vw 1vw 0 0;
+    }
+
+    .show-more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+
+    .show-more h1 {
+        font-size: 4vw;
+    }
+
+    hr.solid {
+        border-top: 3px solid #bbb;
+    }
+
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 16vh; /* Place the button at the bottom of the page */
+        right: 6vw; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: rgb(255, 255, 255); /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 50%; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+        height: 8vh;
+        width: 8vh;
+        box-shadow: #00000038 0 0 10px;
+        transition: all 0.5s;
+    }
+
+    #myBtn:hover {
+      background-color: #555; /* Add a dark-grey background on     hover */
+    }
+
+    .to-top-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
